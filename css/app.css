@@ -59,13 +59,19 @@
 .botn-general{
 	background-color:#ff477b;
 	padding: 15px;
-	color: white;
-	border-radius: 10%; 
+	color: white!important;
+	border-radius: 10px;
+	transition: .5s;
 }
+.botn-general:hover {
+	background: white;
+	color: #ff477b;
+}
+
 h2{
 	font-family:sans-serif;
 	font-size: 35px;
-	font-weight: bold;
+	font-weight: bold!important;
 	padding: 20px;
 	padding-bottom: 50px;
 }
@@ -85,7 +91,7 @@ h2{
 	padding: 10px;
 	height: 96%;
 	line-height: 18px;
-	margin-bottom: 10px;
+	margin-bottom: 20px;
 }
 .card-body{
 	padding-top: 30px;
@@ -101,8 +107,12 @@ h2{
 	color: whitesmoke;
 	font-weight: 700;
 }
-.card:hover{
-	background: blue;
+.servicio .card:nth-child(odd):hover{
+	background: #24ccc0;
+
+}
+.servicio .card:nth-child(even):hover{
+	background:red;
 }
 .card-img-top{
 	width: 33%;
@@ -123,7 +133,7 @@ h2{
 	background-image: url('https://images.unsplash.com/photo-1537731121640-bc1c4aba9b80?ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80'); 
 	text-align: center;
 	background-color: red;
-	padding: 200px 0px;
+	padding: 300px 0px;
 	color:white;
 	box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2), 0px 6px 10px 0px rgba(0, 0, 0, 0.14), 0px 1px 18px 0px rgba(0, 0, 0, 0.12);
 	border-radius: 10px;
@@ -133,12 +143,12 @@ h2{
 }
 .panel-title_inner{
 	position: absolute;
-	bottom: 75px;
+
 }
 .panel-sec p{
 	width: 60%;
 	margin-bottom: 50px;
-	font-size: 1.2rem;
+	font-size: 19px;
 }
 
 .mask{
@@ -150,6 +160,7 @@ h2{
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	border-radius: 10px;
 }
 .panel-sec a{
 	background-color: white;
@@ -158,7 +169,7 @@ h2{
 .text-banner{
 	display: flex;
 	justify-content: center;
-	
+
 }
 .main-footer__subtitle p {
 	width: 50%;
@@ -206,8 +217,8 @@ h2{
 	display: flex;
 	-ms-flex-wrap: wrap;
 	flex-wrap: wrap;
-	margin-right:-14px;
-	margin-left: -14px;
+	margin-right:-20px;
+	margin-left: -20px;
 	padding-bottom: 25px;
 }
 .form-row{
@@ -247,13 +258,17 @@ h2{
 		flex-direction: column;
 	}
 	.panel-sec h1{
-		font-size: 27px;
+		font-size: 30px;
 	}
 	.panel-sec p {
 		width: 100%;
+		font-size: 17px;
 	}
 	.dat{
 		padding: 0px 0 0px 0;
+	}
+	.panel-sec{
+		padding: 250px 0;
 	}
 	.servicio{
 		padding:0px 0 0px 0; 
@@ -286,10 +301,11 @@ h2{
 	}
 	.colu{
 		margin-bottom: 10px;
+		margin-left: -5px;
 	}
 	.form-row{
 		display: block;
-		width: 91%;
+		width: 88%;
 	}
 	.colum-form {
 		padding-bottom: 10px;
