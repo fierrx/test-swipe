@@ -101,6 +101,9 @@ h2{
 	color: whitesmoke;
 	font-weight: 700;
 }
+.card:hover{
+	background: blue;
+}
 .card-img-top{
 	width: 33%;
 	margin-left: 20px;
