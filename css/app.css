@@ -6,7 +6,7 @@
 	justify-content: center;
 	height: 90vh;
 	background-image: url('https://images.unsplash.com/photo-1537731121640-bc1c4aba9b80?ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80');
-	background-size: 100%;
+	background-size: cover;
 	position: relative;
 }
 .mask1{
@@ -65,7 +65,8 @@
 }
 .botn-general:hover {
 	background: white;
-	color: #ff477b;
+	color: #ff477b!important;
+	text-decoration: none;
 }
 
 h2{
@@ -233,6 +234,10 @@ h2{
 .content-boton a{
 	padding: 14px 40px 14px;
 }
+.btn-formulario:hover{
+	background: #ff477bdb;
+	color: white!important;
+}
 
 
 @media (min-width: 0px) and (max-width: 767px){
@@ -242,7 +247,7 @@ h2{
 	.panel h1 {
 		font-family: sans-serif;
 		font-weight: 400;
-		font-size: 30px;
+		font-size: 28px;
 		margin-top: 35px;
 		margin-bottom: 50px;
 		width: 100%;
@@ -338,7 +343,7 @@ h2{
 		padding: 0px;
 	}
 	.form-row{
-		display: block;
+		display: flex;
 	}
 	.colum-form {
 		padding-bottom: 10px;
@@ -351,6 +356,7 @@ h2{
 	.form_body{
 		width: 70%;
 	}
+
 
 
 }
